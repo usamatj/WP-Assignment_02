@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <!-- Cart table -->
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <!-- Dynamically populated cart items will go here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Amount</td>
+                    <td id="cart-total">$0.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Proceed to Payment button -->
+        <button id="proceed-to-payment">Proceed to Payment</button>
+
+        <!-- Link to return to the Home page -->
+        <p><a href="index.html">Back to Home</a></p>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
